@@ -1,0 +1,12 @@
+# Install dependencies using pipenv
+pipenv install
+
+# Create executable using pyinstaller
+pyinstaller --onefile mainApp.py
+
+# Build installer package (e.g., using Inno Setup)
+# Add instructions to include the executable and any other files/resources
+
+# Test the installer
+
+# Distribute the installer

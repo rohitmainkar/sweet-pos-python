@@ -22,7 +22,12 @@ class MainWindow(QMainWindow):
         response = requests.get(VERSION_URL)
         remote_version = response.text.strip()
         local_version = self.get_local_version()
+        
+        print("response",response)
 
+        print("remote_version",remote_version)
+        print("local_version",local_version)
+        
         if remote_version != local_version:
             reply = QMessageBox.question(
                 None,
